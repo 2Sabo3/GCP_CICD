@@ -3,5 +3,5 @@ steps:
     args:
     - run
     - --filename=./deployment.yaml
-    - --location=us-central-1a
+    - --location=us-central-1
     - --cluster=terraform-cluster
