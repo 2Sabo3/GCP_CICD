@@ -5,3 +5,4 @@ steps:
     - --filename=./deployment.yaml
     - --location=us-central1
     - --cluster=terraform-cluster
+logsBucket: 'cicd-gcp-test'
