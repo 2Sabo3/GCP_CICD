@@ -4,5 +4,5 @@ RUN apt update -y & apt upgrade -y
 
 COPY ./website/ /var/var/html/
 
-RUN systemctl restart nginx
+#RUN systemctl restart nginx
 
