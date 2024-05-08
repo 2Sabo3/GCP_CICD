@@ -1,10 +1,6 @@
-FROM ubuntu:latest
+FROM nginx:latest
 
 RUN apt update -y & apt upgrade -y
-
-RUN apt install nginx -y
-
-RUN systemctl status nginx
 
 COPY ./website/ /var/var/html/
 
