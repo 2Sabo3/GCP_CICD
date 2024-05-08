@@ -3,18 +3,17 @@ steps:
     args:
       - build
       - -t 
-      - "gcr.io/careful-alloy-417006/image:$_COMMITID"
+      - "gcr.io/careful-alloy-417006/image:tag"
       - "."
   - name: "gcr.io/cloud-builders/docker"
     args:
       - push
-      - "gcr.io/careful-alloy-417006/image:$_COMMITID"
+      - "gcr.io/careful-alloy-417006/image:tag"
   
   - name: "gcr.io/cloud-builders/gke-deploy"
     args:
     - run
     - --filename=./k8s/deployment.yaml
-    - --image= gcr.io/careful-alloy-417006/image:$_COMMITID
     - --location=us-central1
     - --cluster=terraform-cluster
 logsBucket: 'cicd-gcp-test'
