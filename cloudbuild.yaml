@@ -2,6 +2,6 @@ steps:
   - name: "gcr.io/cloud-builders/gke-deploy"
     args:
     - run
-    - --filename=./deplpoyment.yaml
+    - --filename=./deployment.yaml
     - --location=us-central-1a
     - --cluster=terraform-cluster
