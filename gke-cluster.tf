@@ -5,5 +5,5 @@ resource "google_container_cluster" "terraform-cluster" {
     enable_autopilot = true
     deletion_protection = false
 
-  
+  #uploaded to git
 }
