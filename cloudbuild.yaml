@@ -14,7 +14,7 @@ steps:
     args:
     - run
     - --filename=./k8s/deployment.yaml
-    - --image=gcr.io/careful-alloy-417006/image:tag
+    - --image= gcr.io/careful-alloy-417006/image:tag
     - --location=us-central1
     - --cluster=terraform-cluster
 logsBucket: 'cicd-gcp-test'
