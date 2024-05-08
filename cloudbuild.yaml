@@ -13,8 +13,8 @@ steps:
   - name: "gcr.io/cloud-builders/gke-deploy"
     args:
     - run
-    - --filename =./k8s/deployment.yaml
-    - --filename =./k8s/service.yaml
+    - --filename = ./k8s/deployment.yaml
+    - --filename = ./k8s/service.yaml
     - --image = gcr.io/careful-alloy-417006/image:tag
     - --location=us-central1
     - --cluster=terraform-cluster
